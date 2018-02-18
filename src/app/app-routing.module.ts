@@ -5,6 +5,7 @@ import {ProductComponent} from './product/product.component';
 import {Code404Component} from './code404/code404.component';
 import {ProductDescComponent} from './product-desc/product-desc.component';
 import {SellerInfoComponent} from './seller-info/seller-info.component';
+import {ChatComponent} from './chat/chat.component';
 
 /*  快捷键：  alt +F12 开terminal
  /*           shift + enter，到下一行，
@@ -21,6 +22,8 @@ import {SellerInfoComponent} from './seller-info/seller-info.component';
 const routes: Routes = [
   // 重定向路由，使进来还是4200结尾的url，但是其实跑到/home页面
   {path: '', redirectTo: '/home', pathMatch: 'full'},
+  // 使chat显示在aux插座上
+  {path: 'chat', component: ChatComponent, outlet: 'aux'},
   {path: 'home', component: HomeComponent},
   {path: 'product/:id', component: ProductComponent, children: [
     {path: '', component: ProductDescComponent},

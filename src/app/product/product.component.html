@@ -1,9 +1,12 @@
-<p>
-  Here is the product component!!
-</p>
-<p>
-  the product ID is: {{productId}}
-</p>
-<a [routerLink]="['./']">Product Describe</a>
-<a [routerLink]="['./seller',99]">Seller's Information</a>
-<router-outlet></router-outlet>
+<div class="product">
+  <p>
+    Here is the product component!!
+  </p>
+  <p>
+    the product ID is: {{productId}}
+  </p>
+  <a [routerLink]="['./']">Product Describe</a>
+  <a [routerLink]="['./seller',99]">Seller's Information</a>
+  <router-outlet></router-outlet>
+
+</div>
