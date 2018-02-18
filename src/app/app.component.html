@@ -1,5 +1,5 @@
 <!--这里写路径必须要/开头，这里代表导航到根路由， ./代表到子路由-->
 <a [routerLink]="['/']">The Home</a>
-<a [routerLink]="['/product']">The Product Detail</a>
+<a [routerLink]="['/product', 1]">The Product Detail</a>
 <input type="button" value="Product Detail" (click)="toProductDetails()">
 <router-outlet></router-outlet>
