@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
+import {LoggerService} from './logger.service';
 
 @Injectable()
 export class ProductService {
 
-  constructor() { }
+  constructor(private logger: LoggerService) { }
   getProduct(): Product {
+    this.logger.log("the method is invoked");
     return new Product(0, "iPhone7", 5899, "lastest telephone");
   }
 
