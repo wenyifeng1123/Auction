@@ -30,7 +30,7 @@ export class ProductService {
     return this.products.find((product) => product.id == id);
   }
 
-  getCommentsForProduct(id: number): Comment[] {
+  getCommentsForProductId(id: number): Comment[] {
     return this.comments.filter((comment: Comment) => comment.productId == id);
   }
 
